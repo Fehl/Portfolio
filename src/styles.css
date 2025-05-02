@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+.rounded{
+    border-radius: .25rem;
+}
+
+.navbar {
+    background-color: #313640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    color: white;
+}
+
+
+.text-primary{
+    color: #444;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.horizontal-underline {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.horizontal-underline::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #007BFF; /* blue */
+    transition: width 0.3s ease-in-out;
+    color:black;
+}
+
+.horizontal-underline:hover::after {
+    width: 100%;
+    color: black;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans m-0">
+  <div class="content">
+
+    <div class="flex flex-col relative mx-auto bg-background font-sans min-h-screen rounded overflow-hidden">
+
+       <!-- Header with fixed Navbar -->
+      <nav class="fixed navbar mx-auto px-150 w-full overflow-hidden">
+        <!-- <div class="fixed inset-x-0 top-0"></div> -->
+        <div class="flex flex-1 w-64 mx-auto rounded-2x1">
+          <div class="flex flex-1">
+            <p>Felipe Nagao</p>
+          </div>
+        </div>
+        <div class="flex p-10">
+          <nav class="flex flex-1 justify-center justify-items">
+            <a href="#home" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">Home</a>
+            <a href="#about" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">About</a>
+            <a href="#tech" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">Tech Stack</a>
+            <a href="#contact" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">Contact</a>
+            <button class="theme-switch" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+              <div class="icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 384 512" class="iconify iconify--fa6-solid">
+                  <path fill="currentColor" d="M223.5 32C100 32 0 132.3 0 256s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                  </path>
+                </svg>
+              </div>
+            </button>
+          </nav>
+        </div>
+      </nav>
+  
+      <!-- Main Text -->
+      <main class="flex flex-1 flex-col space-y-10 pt-16">
+        <div class="flex items-center justify-center rounded text-white text-center mx-auto">
+          <div>
+            <h1>
+              <span class="text-primary">Bringing Your Ideas to Life</span>
+              <span role="img" class="wave m1-2">👋</span>
+            </h1>
+          </div>
+        </div>
+        <div class="flex rounded mx-auto w-128">
+          <div>
+            <p>Welcome! I'm a FullStack Developer who loves innovative solutions and is always eager to learn new things.</p>
+          </div>
+        </div>
+        <div class="flex rounded mx-auto w-128">
+          <div>
+            <p>With roughly 5 years of experience with programming in general, I did a lot of software projects trying to find solutions on niche problems.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Contact me -->
+    <section id="contact" class="max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Contact Me</h2>
+      <form class="flex flex-col gap-4">
+        <input type="text" placeholder="Full Name" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        <input type="email" placeholder="Email Address" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        <textarea placeholder="Message" rows="4" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+        <button type="submit" class="bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors">
+          Send Message
+        </button>
+      </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+    
+    
+  </div>
+</body>
+
+</html>
