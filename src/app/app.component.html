@@ -17,7 +17,9 @@
         <!-- <div class="fixed inset-x-0 top-0"></div> -->
         <div class="flex flex-1 w-64 mx-auto rounded-2x1">
           <div class="flex flex-1">
-            <p>Felipe Nagao</p>
+            <p class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500">
+              Felipe Nagao
+            </p>
           </div>
         </div>
         <div class="flex p-10">
@@ -26,7 +28,7 @@
             <a href="#about" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">About</a>
             <a href="#tech" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">Tech Stack</a>
             <a href="#contact" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">Contact</a>
-            <button class="theme-switch" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+            <button class="theme-switch rounded hover:bg-gray-400 w-8 p-1" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
               <div class="icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 384 512" class="iconify iconify--fa6-solid">
                   <path fill="currentColor" d="M223.5 32C100 32 0 132.3 0 256s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
@@ -39,30 +41,80 @@
       </nav>
   
       <!-- Main Text -->
-      <main class="flex flex-1 flex-col space-y-10 pt-16">
+      <main id="about" class="flex flex-1 flex-col space-y-10 pt-16">
         <div class="flex items-center justify-center rounded text-white text-center mx-auto">
           <div>
             <h1>
-              <span class="text-primary">Bringing Your Ideas to Life</span>
+              <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-pink-500">
+                Bringing Your Ideas to Life
+              </span>
               <span role="img" class="wave m1-2">👋</span>
             </h1>
           </div>
         </div>
         <div class="flex rounded mx-auto w-128">
-          <div>
-            <p>Welcome! I'm a FullStack Developer who loves innovative solutions and is always eager to learn new things.</p>
+          <div class="flex inline-block">
+            <p class>
+              Welcome! I'm a 
+              <span #highlightText>Software Engineer</span>
+              who loves to innovate and is always eager to learn new things.
+            </p>
           </div>
         </div>
         <div class="flex rounded mx-auto w-128">
           <div>
-            <p>With roughly 5 years of experience with programming in general, I did a lot of software projects trying to find solutions on niche problems.</p>
+            <p class>
+              With roughly 5 years of experience with Software Development, 
+              I did a lot of software projects with different approaches on niche and general problems.
+              My goal is to craft intelligent solutions with a creative and innovative touch that aligns with your business view.
+            </p>
+          </div>
+        </div>
+        <div class="flex rounded mx-auto w-128">
+          <div>
+            <p class>
+              Together we can create 
+              <span class="highlight-yellow">remarkable projects</span>
+            </p>
           </div>
         </div>
       </main>
     </div>
 
+    <!-- Tech Stack -->
+
+    <section id="tech" class="flex flex-col space-y-10 max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Tech Stack</h2>
+        
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
+          
+          <!-- HTML5 -->
+          <div class="flex flex-col items-center space-y-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="w-12 h-12 text-orange-600">
+              <path fill="currentColor" d="M19 0l8 96 36 10 36-10 8-96H19zm71.5 37.7H46.3l1 11.6h42.2l-3.2 35.9-24.5 6.8-24.4-6.8-1.6-18.3H41l1 11.5 15.5 4.3 15.5-4.3 1-11.3H38.4l-3-33.7h56.3l-1.2 13.3z"/>
+            </svg>
+            <!-- <span class="text-sm font-medium">HTML5</span> -->
+          </div>
+    
+          <!-- Tailwind CSS -->
+          <div class="flex flex-col items-center space-y-2">
+            <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none">
+              <path fill="#38BDF8" d="M24 13.5c-4.9 0-8.4 2.5-10.5 7.5 2.1-2.5 4.2-3.4 6.3-2.8 1.4.4 2.4 1.4 3.5 2.5 1.8 1.9 3.6 3.7 7.7 3.7 4.9 0 8.4-2.5 10.5-7.5-2.1 2.5-4.2 3.4-6.3 2.8-1.4-.4-2.4-1.4-3.5-2.5-1.8-1.9-3.6-3.7-7.7-3.7z"/>
+              <path fill="#38BDF8" d="M13.5 24c-4.9 0-8.4 2.5-10.5 7.5 2.1-2.5 4.2-3.4 6.3-2.8 1.4.4 2.4 1.4 3.5 2.5 1.8 1.9 3.6 3.7 7.7 3.7 4.9 0 8.4-2.5 10.5-7.5-2.1 2.5-4.2 3.4-6.3 2.8-1.4-.4-2.4-1.4-3.5-2.5-1.8-1.9-3.6-3.7-7.7-3.7z"/>
+            </svg>
+            <!-- <span class="text-sm font-medium">Tailwind CSS</span> -->
+          </div>
+    
+          <!-- Add more techs below... -->
+          
+        </div>
+      </div>
+    </section>
+
+
     <!-- Contact me -->
-    <section id="contact" class="max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
+    <section id="contact" class="space-y-10 max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold mb-4 text-center">Contact Me</h2>
       <form class="flex flex-col gap-4">
         <input type="text" placeholder="Full Name" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
@@ -75,9 +127,11 @@
     </section>
 
 
+    <br>
     <!-- Footer -->
     <footer>
-
+      <div class="flex mx-auto w-256">
+      </div>
     </footer>
     
     

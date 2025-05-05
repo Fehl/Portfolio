@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-.rounded{
-    border-radius: .25rem;
-}
-
 .navbar {
     background-color: #313640;
     display: flex;
@@ -11,6 +7,7 @@
     align-items: center;
     height: 3rem;
     color: white;
+    z-index: 1;
 }
 
 
@@ -24,6 +21,7 @@
     position: relative;
     text-decoration: none;
     color: white;
+    border-radius: .25rem;
 }
 
 .horizontal-underline::after {
@@ -41,4 +39,148 @@
 .horizontal-underline:hover::after {
     width: 100%;
     color: black;
+}
+
+
+@keyframes highlight-yellow {
+    0% {
+      background-color: transparent;
+      transform: scaleX(0);
+    }
+    50% {
+      background-color: #ffd66d; 
+      transform: scaleX(1);
+    }
+    100% {
+      background-color: #fbbf24;
+      transform: scaleX(1);
+    }
+  }
+  
+  .highlight-yellow {
+    position: relative;
+    display: inline;
+    overflow: hidden;
+    line-height: 1.4;
+    padding: 0.2em;
+  }
+  
+  .highlight-yellow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transform-origin: left;
+    animation: highlight-yellow 2s ease-in-out forwards;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes highlight-blue {
+    0% {
+      background-color: transparent;
+      transform: scaleX(0);
+    }
+    50% {
+      background-color: #87CEEB; 
+      transform: scaleX(1);
+    }
+    100% {
+      background-color: #4169E1 ;
+      transform: scaleX(1);
+    }
+  }
+  
+  .highlight-blue {
+    position: relative;
+    display: inline;
+    overflow: hidden;
+    line-height: 1.4;
+    padding: 0.2em;
+  }
+  
+  .highlight-blue::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transform-origin: left;
+    animation: highlight-blue 2s ease-in-out forwards;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes highlight-green {
+    0% {
+      background-color: transparent;
+      transform: scaleX(0);
+    }
+    50% {
+      background-color: #32CD32 ; 
+      transform: scaleX(1);
+    }
+    100% {
+      background-color: #3CB371  ;
+      transform: scaleX(1);
+    }
+  }
+  
+  .highlight-green {
+    position: relative;
+    display: inline;
+    overflow: hidden;
+    line-height: 1.4;
+    padding: 0.2em;
+  }
+  
+  .highlight-green::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transform-origin: left;
+    animation: highlight-green 2s ease-in-out forwards;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    40% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+  }
+  
+.wave {
+    font-size: 2rem;
+    display: inline-block;
+    animation: wave 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    transform-origin: bottom center;
+    z-index: -1;
 }
