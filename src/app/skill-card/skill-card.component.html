@@ -1,0 +1,5 @@
+<div class="skill-card">
+    <img *ngIf="iconUrl" [src]="iconUrl" alt="{{ skillName }} logo" class="skill-icon">
+    <h3>{{ skillName }}</h3>
+    <p *ngIf="level">{{ level }}</p>
+</div>
