@@ -46,7 +46,7 @@
           <div>
             <h1>
               <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-pink-500">
-                Bringing Your Ideas to Life
+                Transformando Ideias em Realidade
               </span>
               <span role="img" class="wave m1-2">👋</span>
             </h1>
@@ -55,26 +55,26 @@
         <div class="flex rounded mx-auto w-128">
           <div class="flex inline-block">
             <p class>
-              Welcome! I'm a 
-              <span #highlightText>Software Engineer</span>
-              who loves to innovate and is always eager to learn new things.
+              Bem Vindo! Eu sou um
+              <span #highlightText>Engenheiro de Software</span>
+              que ama inovar e está sempre buscando aprender coisas novas.
             </p>
           </div>
         </div>
         <div class="flex rounded mx-auto w-128">
           <div>
             <p class>
-              With roughly 5 years of experience with Software Development, 
-              I did a lot of software projects with different approaches on niche and general problems.
-              My goal is to craft intelligent solutions with a creative and innovative touch that aligns with your business view.
+              Com aproximadamente 5 anos de experiência em Desenvolvimento de Software, 
+              criei diversos projetos de websites e softwares com diferentes abordagens em problemas gerais e nichados.
+              Meu objetivo é construir soluções inteligentes com um toque criativo e inovador que se alinhe com sua visão de negócio.
             </p>
           </div>
         </div>
         <div class="flex rounded mx-auto w-128">
           <div>
             <p class>
-              Together we can create 
-              <span class="highlight-yellow">remarkable projects</span>
+              Juntos podemos criar
+              <span class="highlight-yellow">projetos memoráveis!</span>
             </p>
           </div>
         </div>
@@ -83,31 +83,59 @@
 
     <!-- Tech Stack -->
 
-    <section id="tech" class="flex flex-col space-y-10 max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
-      <app-tech-stack></app-tech-stack>
+    <section id="tech" class="p-10 bg-background font-sans min-h-screen rounded overflow-hidden mx-auto">
+      <div class="p-10 flex mx-auto w-128">
+        <span 
+          class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 drop-shadow-md"
+        >
+          &lt;Development Tools \&gt;
+        </span>
+      </div>
+      
+      <div class="flex max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
+        <app-tech-stack class=""></app-tech-stack>
+      </div>
     </section>
 
 
     <!-- Contact me -->
-    <section id="contact" class="space-y-10 max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h2 class="text-2xl font-semibold mb-4 text-center">Contact Me</h2>
-      <form class="flex flex-col gap-4">
-        <input type="text" placeholder="Full Name" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-        <input type="email" placeholder="Email Address" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-        <textarea placeholder="Message" rows="4" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
-        <button type="submit" class="bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors">
-          Send Message
-        </button>
-      </form>
+    <section id="contact" class="p-10min-h-screen">
+      <div class="p-10 max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Contact Me</h2>
+        <form class="flex flex-col gap-4">
+          <input type="text" placeholder="Full Name" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          <input type="email" placeholder="Email Address" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          <textarea placeholder="Message" rows="4" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+          <button type="submit" class="bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors">
+            Send Message
+          </button>
+        </form>
+      </div>
     </section>
 
 
     <br>
     <!-- Footer -->
-    <footer>
-      <div class="flex mx-auto w-256">
+    <footer class="bg-gray-900 text-gray-300 py-8 mt-16">
+      <div class="container mx-auto px-4 text-center space-y-4">
+        <h2 class="text-lg font-semibold tracking-wider uppercase">Have a Fantastic {{ day }}</h2>
+    
+        <div class="flex justify-center space-x-6">
+          <a href="https://github.com/ksn0ne" target="_blank" aria-label="GitHub" class="hover:text-white transition">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a href="https://linkedin.com/in/ksn0ne" target="_blank" aria-label="LinkedIn" class="hover:text-white transition">
+            <i class="fab fa-linkedin text-xl"></i>
+          </a>
+          <a href="mailto:your.email@example.com" class="hover:text-white transition" aria-label="Email">
+            <i class="fas fa-envelope text-xl"></i>
+          </a>
+        </div>
+    
+        <p class="text-sm text-gray-400">&copy; {{ currentYear }} Felipe Nagao. All rights reserved.</p>
       </div>
     </footer>
+    
     
     
   </div>
