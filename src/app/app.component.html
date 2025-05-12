@@ -7,10 +7,10 @@
   <link href="/src/styles.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100 text-gray-800 font-sans m-0">
+<body class="bg-gray-100 text-gray-800 font-roboto m-0">
   <div class="content">
 
-    <div class="flex flex-col relative mx-auto bg-background font-sans min-h-screen rounded overflow-hidden">
+    <div class="flex flex-col relative mx-auto bg-background font-roboto min-h-screen rounded overflow-hidden">
 
        <!-- Header with fixed Navbar -->
       <nav class="fixed navbar mx-auto px-150 w-full overflow-hidden">
@@ -25,9 +25,9 @@
         <div class="flex p-10">
           <nav class="flex flex-1 justify-center justify-items">
             <a href="#home" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">Home</a>
-            <a href="#about" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">About</a>
+            <a href="#about" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">Sobre mim</a>
             <a href="#tech" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">Tech Stack</a>
-            <a href="#contact" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">Contact</a>
+            <a href="#contact" class="horizontal-underline rounded py-1 px-3 hover:bg-gray-400">Contato</a>
             <button class="theme-switch rounded hover:bg-gray-400 w-8 p-1" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
               <div class="icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 384 512" class="iconify iconify--fa6-solid">
@@ -46,7 +46,7 @@
           <div>
             <h1>
               <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-pink-500">
-                Transformando Ideias em Realidade
+                Transformando Ideias
               </span>
               <span role="img" class="wave m1-2">👋</span>
             </h1>
@@ -81,9 +81,57 @@
       </main>
     </div>
 
+    <div class="flex rounded mx-auto">
+      <!-- TimeLine -->
+        <section class="py-16 bg-gray-100 mx-auto">
+          <h2 class="text-4xl font-bold text-center mb-12">🕒 Experiências</h2>
+          <div class="relative border-l-4 border-blue-500 ml-6">
+            
+            <!-- Event 1 -->
+            <div class="mb-10 ml-6">
+              <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 top-1.5"></div>
+              <p class="text-sm text-gray-500">Dez 2024 - Presente</p>
+              <h3 class="text-xl font-semibold">Desenvolvedor Autonômo</h3>
+              <p class="text-gray-700">Estudando e desenvolvendo projetos para inserção no mercado como Engenheiro de Software</p>
+              <p class="text-gray-700">Realizando Freelances relacionados a websites e aplicações web periodicamente</p>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="mb-10 ml-6">
+              <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 top-1.5"></div>
+              <p class="text-sm text-gray-500">Fev 2023 – Dez 2024</p>
+              <h3 class="text-xl font-semibold">Estágio em Análise de Dados na Ericsson Inc.</h3>
+              <p class="text-gray-700">Criação e manutenção de dashboards, modelagem de dados, documentação de processos </p>
+              <p class="text-gray-700">Time de Analytics estrangeiro, comunicação 100% do tempo em inglês</p>
+              <p class="text-gray-700">Amazon Web Services, Azure, Docker, Kubernetes, Python, PowerBI, Tableau, SQL Server</p>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="mb-10 ml-6">
+              <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 top-1.5"></div>
+              <p class="text-sm text-gray-500">Jan 2020 – Fev 2024</p>
+              <h3 class="text-xl font-semibold">Freelance </h3>
+              <p class="text-gray-700">Criação de aplicações, automações e websites para diferentes empresas utilizando</p>
+              <p class="text-gray-700">PostgreSQL, Redis, NodeJS, Python, JavaScript, Java, SpringBoot, TypeScript, TailwindCSS</p>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="mb-10 ml-6">
+              <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 top-1.5"></div>
+              <p class="text-sm text-gray-500">Ago 2020 - Jun 2027 (Esperado)</p>
+              <h3 class="text-xl font-semibold">Bacharelado em Ciência da Computação &</h3>
+              <h3 class="text-xl font-semibold">Bacharelado em Ciência de Dados</h3>
+              <p class="text-gray-700">Universidade Federal do ABC, em busca da dupla graduação com ênfase em ML/AI</p>
+              <p class="text-gray-700">Engenharia de Software, R, Python, PySpark, PyTorch, Modelos de Machine Learning e Artificial Intelligence</p>
+            </div>
+
+          </div>
+        </section>
+    </div>
+
     <!-- Tech Stack -->
 
-    <section id="tech" class="p-10 bg-background font-sans min-h-screen rounded overflow-hidden mx-auto">
+    <section id="tech" class="p-10 bg-background font-roboto min-h-screen rounded overflow-hidden mx-auto">
       <div class="p-10 flex mx-auto w-128">
         <span 
           class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 drop-shadow-md"
@@ -101,13 +149,13 @@
     <!-- Contact me -->
     <section id="contact" class="p-10min-h-screen">
       <div class="p-10 max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
-        <h2 class="text-2xl font-semibold mb-4 text-center">Contact Me</h2>
+        <h2 class="text-2xl font-semibold mb-4 text-center">Vamos nos conectar?</h2>
         <form class="flex flex-col gap-4">
-          <input type="text" placeholder="Full Name" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-          <input type="email" placeholder="Email Address" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-          <textarea placeholder="Message" rows="4" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+          <input type="text" placeholder="Nome Completo" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          <input type="email" placeholder="Endereço de Email" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          <textarea placeholder="Mensagem" rows="4" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
           <button type="submit" class="bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors">
-            Send Message
+            Enviar
           </button>
         </form>
       </div>
@@ -118,7 +166,7 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-8 mt-16">
       <div class="container mx-auto px-4 text-center space-y-4">
-        <h2 class="text-lg font-semibold tracking-wider uppercase">Have a Fantastic {{ day }}</h2>
+        <h2 class="text-lg font-semibold tracking-wider uppercase">Tenha uma fantástica {{ day }}!</h2>
     
         <div class="flex justify-center space-x-6">
           <a href="https://github.com/ksn0ne" target="_blank" aria-label="GitHub" class="hover:text-white transition">

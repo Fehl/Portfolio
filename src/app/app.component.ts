@@ -9,5 +9,5 @@ import { TechStackComponent } from "./tech-stack/tech-stack.component";
 export class AppComponent {
   title = 'Portfolio';
   currentYear = new Date().getFullYear();
-  day = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+  day = new Date().toLocaleDateString('pt-BR', { weekday: 'long' });
 }
