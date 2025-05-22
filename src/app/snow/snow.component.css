@@ -3,3 +3,30 @@
   pointer-events: none;
   z-index: 9999;
 }
+
+.typewriter-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow:
+    0 0 5px #8defff,
+    0 0 10px #00e6ff,
+    0 0 20px #00e6ff,
+    0 0 40px #00e6ff;
+  position: relative;
+}
+
+.sparkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #00e6ff;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: sparkle-flicker 2s infinite;
+}
+
+@keyframes sparkle-flicker {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 0.2; }
+}
