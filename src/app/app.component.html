@@ -33,15 +33,65 @@
     <!-- Home -->
     <section id="home" class="start mx-auto min-h-screen min-w-screen">
       <div class="start-content">
+        
         <app-snow class="snow"></app-snow>
-        <p class="typewriter">Olá, me chamo Felipe Nagao! </p>
-        <app-typewriter class="typewriter"></app-typewriter>
-        <br>
-        <p class="typewriter-common">
-          Residente de São Paulo, Brasil. Apaixonado por Engenharia de Software, Gaming e Guitarras.<br>
+        
+        <div class="content">
+
+          <p class="typewriter">Olá, me chamo Felipe Nagao! </p>
+          <app-typewriter class="typewriter"></app-typewriter>
+          <br>
+
+          <p class="typewriter-common">
+          Residente de São Paulo, Brasil. Apaixonado por Engenharia de Software, Gaming e Guitarras.<br><br>
           Em busca de uma oportunidade no ramo de desenvolvimento de Software, <br>
           com muita vontade de solucionar problemas, colaborar em projetos reais e aprender com equipes experientes. 
-        </p>
+          </p>
+
+          <div class="contact">
+
+            <div class="see-more rounded flex">
+
+              <p class="text-white rounded py-4">
+                Vamos nos conhecer?
+              </p>
+              <a href="#about"(click)="scrollToSection($event, 'about')" class="down-button hover:bg-gray-700">
+                <div class="down-animation">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" fill="white" viewBox="0 0 24 24">
+                    <path d="M7 10l5 5 5-5H7z"/>
+                  </svg>
+                </div>
+              </a>
+              
+
+
+            </div>
+
+            <div class="socials flex space-x-8">
+
+              <a href="https://github.com/fehl" target="_blank" aria-label="GitHub" class="hover:text-white transition">
+                <i class="fab fa-github text-xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/felipe-nagao-488500230/" target="_blank" aria-label="LinkedIn" class="hover:text-white transition">
+                <i class="fab fa-linkedin text-xl"></i>
+              </a>
+              <a href="mailto:fh.nagao@gmail.com" class="hover:text-white transition" aria-label="Email">
+                <i class="fas fa-envelope text-xl"></i>
+              </a>
+
+              
+            </div>
+
+            
+
+          </div>
+
+          
+
+        </div>
+        
+
+        
       </div>
     </section>
 
@@ -49,7 +99,7 @@
     <main id="about" class="flex flex-1 flex-col space-y-10">
       <div class="custom-shape-divider-top-1747954241">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+              <path fill="#04052E" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
           </svg>
       </div>
       <div class="flex items-center justify-center rounded text-white text-center mx-auto">
@@ -145,7 +195,7 @@
   <section id="tech" class="p-10 bg-background font-roboto min-h-screen rounded overflow-hidden mx-auto">
     <div class="p-10 flex mx-auto w-128">
       <span 
-        class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 drop-shadow-md"
+        class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 drop-shadow-md animated-gradient-tools"
       >
         &lt;Development Tools \&gt;
       </span>

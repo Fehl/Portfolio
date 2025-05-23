@@ -64,8 +64,8 @@ export class SnowComponent implements AfterViewInit, OnDestroy {
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         radius: Math.random() * 4 + 1,
-        speedY: Math.random() * 0.25 + 0.5,
-        speedX: Math.random() * 0.5 - 0.25,
+        speedY: Math.random() * 0.1 + 0.5,
+        speedX: Math.random() * 0.2 - 0.2,
       });
     }
 
