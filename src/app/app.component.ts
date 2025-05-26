@@ -11,7 +11,15 @@ import { TypewriterComponent } from "./typewriter/typewriter.component";
 export class AppComponent {
   title = 'Portfolio';
   currentYear = new Date().getFullYear();
-  day = new Date().toLocaleDateString('pt-BR', { weekday: 'long' });
+  
+
+  weekDay() {
+    let day = new Date().toLocaleDateString('pt-BR', { weekday: 'long' });
+    if (day == "Domingo" || day == "Sábado") {
+      day = "Semana";
+    }
+    return day;
+  }
 
   scrollToSection(event: Event, sectionId: string) {
     event.preventDefault(); // Prevent default anchor behavior (changing URL)

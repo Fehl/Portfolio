@@ -32,6 +32,8 @@
 
     <!-- Home -->
     <section id="home" class="start mx-auto min-h-screen min-w-screen">
+      <div class="aurora-2"></div>
+      <div class="aurora"></div>
       <div class="start-content">
         
         <app-snow class="snow"></app-snow>
@@ -43,7 +45,8 @@
           <br>
 
           <p class="typewriter-common">
-          Residente de São Paulo, Brasil. Apaixonado por Engenharia de Software, Gaming e Guitarras.<br><br>
+          📍 São Paulo, SP, Brasil <br>
+          Apaixonado por Engenharia de Software, Gaming e Guitarras.<br><br>
           Em busca de uma oportunidade no ramo de desenvolvimento de Software, <br>
           com muita vontade de solucionar problemas, colaborar em projetos reais e aprender com equipes experientes. 
           </p>
@@ -53,10 +56,11 @@
             <div class="see-more rounded flex">
 
               <p class="text-white rounded py-4">
+                
                 Vamos nos conhecer?
               </p>
-              <a href="#about"(click)="scrollToSection($event, 'about')" class="down-button hover:bg-gray-700">
-                <div class="down-animation">
+              <a href="#about"(click)="scrollToSection($event, 'about')" class="down-button">
+                <div class="down-animation transition">
                   <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" fill="white" viewBox="0 0 24 24">
                     <path d="M7 10l5 5 5-5H7z"/>
                   </svg>
@@ -69,13 +73,13 @@
 
             <div class="socials flex space-x-8">
 
-              <a href="https://github.com/fehl" target="_blank" aria-label="GitHub" class="hover:text-white transition">
+              <a href="https://github.com/fehl" target="_blank" aria-label="GitHub" class="social hover:text-white transition">
                 <i class="fab fa-github text-xl"></i>
               </a>
-              <a href="https://www.linkedin.com/in/felipe-nagao-488500230/" target="_blank" aria-label="LinkedIn" class="hover:text-white transition">
+              <a href="https://www.linkedin.com/in/felipe-nagao-488500230/" target="_blank" aria-label="LinkedIn" class="social hover:text-white transition">
                 <i class="fab fa-linkedin text-xl"></i>
               </a>
-              <a href="mailto:fh.nagao@gmail.com" class="hover:text-white transition" aria-label="Email">
+              <a href="mailto:fh.nagao@gmail.com" class="social hover:text-white transition" aria-label="Email">
                 <i class="fas fa-envelope text-xl"></i>
               </a>
 
@@ -209,7 +213,7 @@
 
   <!-- Contact me -->
   <section id="contact" class="p-10min-h-screen">
-    <div class="p-10 max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
+    <!-- <div class="p-10 max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold mb-4 text-center">Vamos nos conectar?</h2>
       <form class="flex flex-col gap-4">
         <input type="text" placeholder="Nome Completo" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
@@ -219,7 +223,7 @@
           Enviar
         </button>
       </form>
-    </div>
+    </div> -->
   </section>
 
 
@@ -227,7 +231,7 @@
   <!-- Footer -->
   <footer class="bg-gray-900 text-gray-300 py-8 mt-16">
     <div class="container mx-auto px-4 text-center space-y-4">
-      <h2 class="text-lg font-semibold tracking-wider uppercase">Tenha uma fantástica {{ day }}!</h2>
+      <h2 class="text-lg font-semibold tracking-wider uppercase">Tenha uma fantástica {{ weekDay() }}!</h2>
   
       <div class="flex justify-center space-x-6">
         <a href="https://github.com/fehl" target="_blank" aria-label="GitHub" class="hover:text-white transition">
