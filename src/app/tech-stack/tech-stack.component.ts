@@ -10,21 +10,23 @@ import { SkillCardComponent } from '../skill-card/skill-card.component';
 })
 
 export class TechStackComponent {
+  hoveredSkill: string = '';
+
   skills = [
-    { skillName: 'Angular', iconUrl: 'icons/angular.svg', level: 'Advanced' },
-    { skillName: 'TypeScript', iconUrl: 'icons/typescript.svg', level: 'Advanced' },
-    { skillName: 'HTML5', iconUrl: 'icons/html5.svg', level: 'Advanced' },
-    { skillName: 'CSS3', iconUrl: 'icons/css3.svg', level: 'Intermediate' },
-    { skillName: 'JavaScript', iconUrl: 'icons/javascript.svg', level: 'Intermediate' },
-    { skillName: 'Python', iconUrl: 'icons/python.svg', level: 'Intermediate' },
-    { skillName: 'Java', iconUrl: 'icons/java.svg', level: 'Intermediate' },
-    // { skillName: 'C#', iconUrl: 'icons/csharp.svg', level: 'Intermediate' },
-    { skillName: 'MySQL', iconUrl: 'icons/mysql.svg', level: 'Intermediate' },
-    { skillName: 'PostgreSQL', iconUrl: 'icons/postgresql.svg', level: 'Intermediate' },
-    { skillName: 'NodeJS', iconUrl: 'icons/nodedotjs.svg', level: 'Intermediate' },
-    { skillName: 'SpringBoot', iconUrl: 'icons/springboot.svg', level: 'Intermediate' },
-    { skillName: 'AWS', iconUrl: 'icons/amazonwebservices.svg', level: 'Intermediate' },
-    { skillName: 'Docker', iconUrl: 'icons/docker.svg', level: 'Intermediate' },
+    { skillName: 'Angular', iconUrl: 'icons/angular.svg', color: '#a855f7'},
+    { skillName: 'TypeScript', iconUrl: 'icons/typescript.svg', color: '#000000'},
+    { skillName: 'HTML5', iconUrl: 'icons/html5.svg', color: '#000000'},
+    { skillName: 'CSS3', iconUrl: 'icons/css3.svg', color: '#000000'},
+    { skillName: 'JavaScript', iconUrl: 'icons/javascript.svg', color: '#000000'},
+    { skillName: 'Python', iconUrl: 'icons/python.svg', color: '#000000'},
+    { skillName: 'Java', iconUrl: 'icons/java.svg', color: '#000000'},
+    // { skillName: 'C#', iconUrl: 'icons/csharp.svg', color: '#000000'},
+    { skillName: 'MySQL', iconUrl: 'icons/mysql.svg', color: '#000000'},
+    { skillName: 'PostgreSQL', iconUrl: 'icons/postgresql.svg', color: '#000000'},
+    { skillName: 'NodeJS', iconUrl: 'icons/nodedotjs.svg', color: '#000000'},
+    { skillName: 'SpringBoot', iconUrl: 'icons/springboot.svg', color: '#000000'},
+    { skillName: 'AWS', iconUrl: 'icons/amazonwebservices.svg', color: '#000000'},
+    { skillName: 'Docker', iconUrl: 'icons/docker.svg', color: '#000000'},
     
   ];
 }

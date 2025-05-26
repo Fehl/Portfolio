@@ -3,6 +3,8 @@
       *ngFor="let skill of skills"
       [skillName]="skill.skillName"
       [iconUrl]="skill.iconUrl"
+      [ngStyle]="{ 'border-color': hoveredSkill === skill.skillName ? skill.color : 'transparent' }"
+      (mouseenter)="hoveredSkill = skill.skillName"
       >
     </app-skill-card>
 </div>
