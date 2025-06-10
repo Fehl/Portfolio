@@ -20,7 +20,7 @@ export class CustomCursorComponent implements OnInit, OnDestroy {
 
   trail: { x: number, y: number }[] = [];
   private readonly trailLength = 10; // How many segments in the trail
-  private readonly speed = 0.08; // How quickly the trail follows
+  private readonly speed = 0.2; // How quickly the trail follows
 
   private animationFrameId: number | null = null;
   private listeners: (() => void)[] = [];
