@@ -1,0 +1,6 @@
+<div class="cursor-dot" [ngStyle]="getDotStyles()"></div>
+<div 
+  *ngFor="let segment of trail; let i = index"
+  class="cursor-trail-segment"
+  [ngStyle]="getTrailSegmentStyles(i)">
+</div>

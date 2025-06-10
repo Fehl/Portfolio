@@ -1,0 +1,52 @@
+:host {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0; /* Hide cursor by default */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* When the .cursor-visible class is added via HostBinding, we fade it in */
+:host(.cursor-visible) {
+    opacity: 1;
+}
+
+/* Style for the custom cursor dot */
+.cursor-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fdff88;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.2s ease-out, width 0.2s ease-out, height 0.2s ease-out;
+}
+
+/* Style for the cursor outline */
+.cursor-trail-segment {
+    width: 10px;
+    height: 10px;
+    /* border: 2px solid rgba(242, 255, 57, 0.5); */
+    background-color: rgba(242, 255, 57, 0.5);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    transition: transform 0.1s ease-out, width 0.3s ease-out, height 0.3s ease-out, border-color 0.3s ease-out;
+}
+
+:host-context(body.cursor-grow) .cursor-dot {
+    transform: scale(1.5);
+}
+
+:host-context(body.cursor-grow) .cursor-trail {
+    width: 10px;
+    height: 10px;
+    border-color: #fdff88;
+}
